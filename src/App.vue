@@ -15,7 +15,34 @@ export default {
   },
   data() {
     return {
-      store,
+      // store,
+      menu: [ 
+        {
+          text:"Home",
+          url:"#",
+          current: true
+      },
+      {
+          text:"About Us",
+          url:"#",
+          current: false
+      },
+      {
+          text:"Feature",
+          url:"#",
+          current: false
+      },
+      {
+          text:"Testimonials",
+          url:"#",
+          current: false
+      },
+      {
+          text:"Contact Us",
+          url:"#",
+          current: false
+      },
+      ],
     }
   },
   methods: {
@@ -30,7 +57,7 @@ export default {
 <template>
 
   
-  <PageHeader/>
+  <PageHeader :links="menu"/>
   <PageMain/>
   <PageFooter/>
 

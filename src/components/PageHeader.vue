@@ -3,8 +3,10 @@
 // import { store } from "./../store.js";
 
 export default {
-
-  name: "PageHeader",
+    name: "PageHeader",
+    props: {
+    links: Array
+    },
 
   components: {
   },
@@ -33,32 +35,14 @@ export default {
             </div>
 
             <ul>
-                <li>
-                    <a href="#">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        About us
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Feature
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Testimonials
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contact us
+                <!-- popolo lista dinamicamente con dati nell array menù passato con props links -->
+                <li v-for="(link,index) in links" :key="index" >
+                    <a :href="link.url" :class="link.current ? 'active' : ''">
+                        {{ link.text }}
                     </a>
                 </li>
 
+                <!-- da qui popolo lista staticamente -->
                 <li class="list-item-icone">
                     <div>
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -140,6 +124,12 @@ header {
             padding: 10px;
         }
     }
+    }
+
+    .active {
+        color: #377dff;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #377dff;
     }
 
     
