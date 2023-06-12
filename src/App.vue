@@ -2,7 +2,7 @@
 import PageHeader from './components/PageHeader.vue';
 import PageMain from './components/PageMain.vue';
 import PageFooter from './components/PageFooter.vue';
-import { store } from "./store";
+// import { store } from "./store";
 
 
 
@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       // store,
-      menu: [ 
+      menuHeader: [ 
         {
           text:"Home",
           url:"#",
@@ -43,6 +43,60 @@ export default {
           current: false
       },
       ],
+      Lista1Footer: [ 
+        {
+          text:"About us",
+          url:"#",
+          
+      },
+      {
+          text:"Theme",
+          url:"#",
+          
+      },
+      {
+          text:"Features",
+          url:"#",
+          
+      },
+      {
+          text:"Pricing",
+          url:"#",
+          
+      },
+      {
+          text:"Blog",
+          url:"#",
+          
+      },
+      ],
+      Lista2Footer: [ 
+        {
+          text:"About Sofbox",
+          url:"#",
+          
+      },
+      {
+          text:"Roadmap",
+          url:"#",
+          
+      },
+      {
+          text:"How it works",
+          url:"#",
+          
+      },
+      {
+          text:"Team",
+          url:"#",
+          
+      },
+      {
+          text:"News",
+          url:"#",
+          
+      },
+      ],
     }
   },
   methods: {
@@ -57,9 +111,9 @@ export default {
 <template>
 
   
-  <PageHeader :links="menu"/>
+  <PageHeader :links="menuHeader"/>
   <PageMain/>
-  <PageFooter/>
+  <PageFooter :lista1="Lista1Footer" :lista2="Lista2Footer" />
 
 </template>
 

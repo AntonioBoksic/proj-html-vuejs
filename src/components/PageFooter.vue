@@ -6,6 +6,10 @@
 export default {
 
   name: "PageFooter",
+  props: {
+    lista1: Array,
+    lista2: Array
+    },
 
   components: {
     
@@ -41,36 +45,20 @@ export default {
         
 
         <!-- lista1 -->
-        <div class="box">
-            <ul>
+        <ul class="box">
+            
             <li class="titolo-lista">
                 <h2>Menù</h2>
             </li>
-
-            <li>
-                <a href="#">
-                    About us 
+            <!-- popolo lista dinamicamente con dati nell array Lista1Footer passato con props lista1 -->
+            <li v-for="(link,index) in lista1" :key="index">
+                <a :href="link.url">
+                    {{link.text}}
                 </a>
                    
             </li>
-
-            <li>
-                Themes
-            </li>
-
-            <li>
-                Features
-            </li>
-
-            <li>
-                Pricing
-            </li>
-
-            <li>
-                Blog
-            </li>
+        
         </ul>
-        </div>
         
 
         <!-- lista2 -->
@@ -79,25 +67,15 @@ export default {
                 <h2>About Us</h2>
             </li>
 
-            <li>
-                About us    
+            <!-- popolo lista dinamicamente con dati nell array Lista1Footer passato con props lista1 -->
+            <li v-for="(link,index) in lista2" :key="index">
+                <a :href="link.url">
+                    {{link.text}}
+                </a>
+                   
             </li>
 
-            <li>
-                Themes
-            </li>
-
-            <li>
-                Features
-            </li>
-
-            <li>
-                Pricing
-            </li>
-
-            <li>
-                Blog
-            </li>
+           
         </ul>
 
         <!-- lista 3 -->
@@ -106,25 +84,16 @@ export default {
                 <h2>Quick Links</h2>
             </li>
 
-            <li>
-                About us    
+            <!-- popolo lista dinamicamente con dati nell array Lista1Footer passato con props lista1 -->
+            <li v-for="(link,index) in lista1" :key="index">
+                <a :href="link.url">
+                    {{link.text}}
+                </a>
+                   
             </li>
 
-            <li>
-                Themes
-            </li>
-
-            <li>
-                Features
-            </li>
-
-            <li>
-                Pricing
-            </li>
-
-            <li>
-                Blog
-            </li>
+            
+           
         </ul>
     
 
