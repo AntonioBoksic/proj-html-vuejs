@@ -112,6 +112,13 @@ export default {
 
   
   <PageHeader :links="menuHeader"/>
+  <section class="jumbotron">
+    <div class="container">
+      <img src="../public/img/27-1.png" alt="">
+
+    </div>
+
+  </section>
   <PageMain/>
   <PageFooter :lista1="Lista1Footer" :lista2="Lista2Footer" />
 
@@ -121,6 +128,24 @@ export default {
 
 @use './styles/partials/variables.scss' as *;
 @use './styles/general.scss' as *;
+
+.jumbotron{
+
+  .container{
+    width: 90%;
+    height: 430px;
+    border: green 1px solid;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f2f7ff;
+
+    img{
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
 
 </style>
 
