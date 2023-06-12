@@ -27,20 +27,164 @@ export default {
 
 <!-- HTML -->
 <template>
-  
-<h1>PageFooter</h1>
+  <footer>
 
+    <div class="container">
+
+        <!-- box con logo copyright -->
+        
+        <div class="box">
+            <img src="../../public/img/35.png" alt="">
+            <p>it is a long established fact that a reader wil be distracted by the readable content.</p>
+            <div class="copyright">Copyright @ 2018 <span style="color: #377dff;">Sofbox</span></div>
+        </div>
+        
+
+        <!-- lista1 -->
+        <div class="box">
+            <ul>
+            <li class="titolo-lista">
+                <h2>Menù</h2>
+            </li>
+
+            <li>
+                <a href="#">
+                    About us 
+                </a>
+                   
+            </li>
+
+            <li>
+                Themes
+            </li>
+
+            <li>
+                Features
+            </li>
+
+            <li>
+                Pricing
+            </li>
+
+            <li>
+                Blog
+            </li>
+        </ul>
+        </div>
+        
+
+        <!-- lista2 -->
+        <ul class="box">
+            <li class="titolo-lista">
+                <h2>About Us</h2>
+            </li>
+
+            <li>
+                About us    
+            </li>
+
+            <li>
+                Themes
+            </li>
+
+            <li>
+                Features
+            </li>
+
+            <li>
+                Pricing
+            </li>
+
+            <li>
+                Blog
+            </li>
+        </ul>
+
+        <!-- lista 3 -->
+        <ul class="box">
+            <li class="titolo-lista">
+                <h2>Quick Links</h2>
+            </li>
+
+            <li>
+                About us    
+            </li>
+
+            <li>
+                Themes
+            </li>
+
+            <li>
+                Features
+            </li>
+
+            <li>
+                Pricing
+            </li>
+
+            <li>
+                Blog
+            </li>
+        </ul>
     
-  
+
+    </div>
+
+  </footer>
 
 </template>
 
 <!-- STILE -->
 
 <style scoped lang="scss">
-h1 {
-    color: red;
+footer {
+    height: 200px;
+    border: red 1px solid;
+    color: #8e989f;
+
+    .container {
+        height: 100%;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .box {
+            height: 100%;
+            width: calc(25% - 10px);
+            padding: 20px 5px 0px 5px;
+
+            
+
+                li{
+                
+                    margin: 5px 0px;
+                }
+
+                h2{
+                color: black;
+                margin-bottom: 10px;
+                }
+
+                img {
+                height: 50px;
+                width: 150px;
+                }
+
+            
+            
+
+            
+        }
+    }
 }
+
+a {
+    color: #8e989f;
+}
+
+
 
 </style>
 
