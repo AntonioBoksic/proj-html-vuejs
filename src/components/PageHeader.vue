@@ -121,7 +121,7 @@ header {
             color: white;
             border: none;
             border-radius: 4px;
-            padding: 10px;
+            padding: 10px 20px;
         }
     }
     }

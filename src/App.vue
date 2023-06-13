@@ -113,7 +113,16 @@ export default {
   
   <PageHeader :links="menuHeader"/>
   <section class="jumbotron">
+
+
     <div class="container">
+
+      <section class="content-jumbotron">
+      <h1>The biggest platform for your growth.</h1>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+      <button>Read More</button>
+      </section>
+
       <img src="../public/img/27-1.png" alt="">
 
     </div>
@@ -138,6 +147,32 @@ export default {
     margin: 0 auto;
     position: relative;
     background-color: #f2f7ff;
+
+    .content-jumbotron {
+      padding-left: 20px;
+      padding-top: 40px;
+      width: 40%;
+
+      h1 {
+        font-size: 44px;
+        line-height: 66px;
+      }
+
+      p{
+        color: #8e989f;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 30px;
+      }
+
+      button{
+        background-color: #377dff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+      }
+    }
 
     img{
       position: absolute;
