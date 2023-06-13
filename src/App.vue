@@ -213,14 +213,53 @@ export default {
       </div>
       
     </div>
-    
-    
   </section>
 
   <!-- tips & tricks -->
-  <section class="tips&tricks">
+  <section class="tips_tricks">
+    <div class="container">
+      <!-- contenuto tips & tricks -->
+      <div class="content-tips">
+        <h2>Get tips tricks on how to skyrocket your sales.</h2>
+        <p>faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
+        <!-- card 1-->
+        <div class="card-tips analysis">
+          <div class="card-tips-img">
+            <img src="../public/img/510.png" alt="">
 
+          </div>
+
+          <div class="card-tips-content">
+            <div class="title">Reporting Analysis</div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+          </div>
+
+        </div>
+        <!-- card 2-->
+        <div class="card-tips seo">
+          <div class="card-tips-img">
+            <img src="../public/img/511.png" alt="">
+
+          </div>
+
+          <div class="card-tips-content">
+            <div class="title">Technical SEO Audit</div>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+          </div>
+
+        </div>
+        
+      </div>
+      <!-- immagine tips & tricks -->
+      <div class="img-tips">
+        <img src="../public/img/509.jpeg" alt="">
+      </div>
+
+    </div>
   </section>
+  
   <PageMain/>
   <PageFooter :lista1="Lista1Footer" :lista2="Lista2Footer" />
 
@@ -325,6 +364,95 @@ export default {
       }
 
     }
+  }
+}
+
+.tips_tricks{
+  .container {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .content-tips {
+      width: 50%;
+      padding-right: 10px;
+
+      h2 {
+        font-size: 33px;
+        line-height: 44px;
+      }
+
+      p{
+        color: #8e989f;
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      .card-tips {
+        // border: 1px black solid;
+        display: flex;
+        margin: 10px 0px;
+
+        
+        
+
+        .card-tips-img{
+          width: calc(100% / 6);
+          height: 100%;
+          align-self: center;
+
+        }
+
+        .card-tips-content{
+
+          width: calc(100% / 6 * 5);
+          padding: 15px 10px;
+
+          .title {
+            color: #377dff;
+            font-size: 22px;
+          }
+
+          p{
+          color: #8e989f;
+          font-size: 18px;
+          line-height: 26px;
+          
+          }
+
+        }
+      }
+    }
+
+    .card-tips.analysis {
+          box-shadow: 5px 5px 15px 2px #00000026;
+          
+        }
+
+    .img-tips {
+      width: 50%;
+      padding-left: 10px;
+
+      img{
+        width: 100%;
+        height: 100%
+      };
+    }
+
+  }
+}
+
+.popular-features{
+  .container {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
