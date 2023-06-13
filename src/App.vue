@@ -112,9 +112,8 @@ export default {
 
   
   <PageHeader :links="menuHeader"/>
+  <!-- jumbotron -->
   <section class="jumbotron">
-
-
     <div class="container">
 
       <section class="content-jumbotron">
@@ -124,8 +123,102 @@ export default {
       </section>
 
       <img src="../public/img/27-1.png" alt="">
-
     </div>
+  </section>
+  <!-- online marketing -->
+  <section class="online-marketing">
+    <div class="container">
+      <div class="card">
+        <div class="card-logo">
+          <img src="../public/img/24.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Online Marketing</h3>
+          <p>it is a long established fact that a reader will be distracted</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              SEO
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              SEM
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Website Strategy
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Social Management
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-logo">
+          <img src="../public/img/24.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Online Marketing</h3>
+          <p>it is a long established fact that a reader will be distracted</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              SEO
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              SEM
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Website Strategy
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Social Management
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-logo">
+          <img src="../public/img/24.png" alt="">
+        </div>
+        <div class="card-content">
+          <h3>Online Marketing</h3>
+          <p>it is a long established fact that a reader will be distracted</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              SEO
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              SEM
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Website Strategy
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Social Management
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+  </section>
+
+  <!-- tips & tricks -->
+  <section class="tips&tricks">
 
   </section>
   <PageMain/>
@@ -147,6 +240,7 @@ export default {
     margin: 0 auto;
     position: relative;
     background-color: #f2f7ff;
+    margin-bottom: 50px;
 
     .content-jumbotron {
       padding-left: 20px;
@@ -178,6 +272,58 @@ export default {
       position: absolute;
       right: 20px;
       top: 20px;
+    }
+  }
+}
+
+.online-marketing {
+  .container {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card{
+      border: 1px solid black;
+      width: calc(100% /3 - 20px);
+      height: 250px;
+      display: flex;
+      margin: 0px 10px;
+
+      .card-logo {
+        width:20%;
+
+        img{
+          height: 55px;
+          width: 55px;
+        }
+      }
+
+      .card-content {
+        width: 80%;
+
+        h3{
+          padding-bottom: 20px;
+        }
+
+        p{
+        color: #8e989f;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 30px;
+        }
+
+        li{
+          margin: 10px 0px;
+
+          i {
+            color: #377dff;
+          }
+        }
+      }
+
     }
   }
 }
