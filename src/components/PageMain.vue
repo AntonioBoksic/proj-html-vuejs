@@ -159,9 +159,9 @@ export default {
 <!-- sezione our testimonials -->
 <section class="our-testimonials">
 
-  <div class="wave-img">
+  <!-- <div class="wave-img">
     <img src="../../public/img/15.png" alt="">
-  </div>
+  </div> -->
 
   <div class="container">
     <h2>Our Testimonials</h2>
@@ -338,8 +338,10 @@ p{
     width: 75%;
     margin: 0 auto;
     
+    
     h2 {
     text-align: center;
+    z-index: 10;
     }
 
   .pcenter {
@@ -347,6 +349,7 @@ p{
     padding-bottom: 50px;
     width: 46%;
     margin: 0 auto;
+    z-index: 10;
     }
 
     .cards-container{
@@ -358,13 +361,15 @@ p{
       .card {
         width: calc(50% - 40px);
         height: 300px;
-        border: black 1px solid;
+        // border: black 1px solid;
         padding: 30px;
+        box-shadow: 5px 5px 15px 2px #00000026;
 
         .title{
           font-size:$cardtitlefontsize ;
           text-align: center;
           padding: 30px 0px;
+          
 
           span{
             color: #8e989f;
@@ -374,7 +379,7 @@ p{
 
         .card-img {
           
-          border: black 2px solid;
+          border: white 1px solid;
           width: 75px;
           height: 75px;
           margin: 0 auto;
@@ -399,7 +404,13 @@ p{
       // top:0px;
       // width: 350px;
       color: black;
-      background-color: green;
+      position: absolute;
+      top: 0;
+      transform: translate(-20%,0);
+      z-index: 1;
+      
+      background: linear-gradient(to bottom,#f0f7ff 75%,white);
+      
 
 
     }
