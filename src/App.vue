@@ -259,7 +259,7 @@ export default {
 
     </div>
   </section>
-  
+
   <PageMain/>
   <PageFooter :lista1="Lista1Footer" :lista2="Lista2Footer" />
 
@@ -270,16 +270,19 @@ export default {
 @use './styles/partials/variables.scss' as *;
 @use './styles/general.scss' as *;
 
+
+// jumbotron
 .jumbotron{
 
   .container{
     width: 90%;
     height: 430px;
-    border: green 1px solid;
+    // border: green 1px solid;
     margin: 0 auto;
     position: relative;
     background-color: #f2f7ff;
     margin-bottom: 50px;
+    border-radius: 8px;
 
     .content-jumbotron {
       padding-left: 20px;
@@ -298,13 +301,7 @@ export default {
         margin-bottom: 30px;
       }
 
-      button{
-        background-color: #377dff;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        padding: 10px 20px;
-      }
+      
     }
 
     img{
@@ -315,7 +312,10 @@ export default {
   }
 }
 
+// sezione online marketing
 .online-marketing {
+  padding-top: $paddingtop-sections;
+
   .container {
     height: 100%;
     width: 75%;
@@ -325,11 +325,11 @@ export default {
     justify-content: space-between;
 
     .card{
-      border: 1px solid black;
+      // border: 1px solid black;
       width: calc(100% /3 - 20px);
       height: 250px;
       display: flex;
-      margin: 0px 10px;
+      
 
       .card-logo {
         width:20%;
@@ -367,7 +367,9 @@ export default {
   }
 }
 
+// sezione tips & tricks
 .tips_tricks{
+  padding-top: $paddingtop-sections;
   .container {
     height: 100%;
     width: 75%;
@@ -413,7 +415,7 @@ export default {
 
           .title {
             color: #377dff;
-            font-size: 22px;
+            font-size: $cardtitlefontsize;
           }
 
           p{
@@ -445,6 +447,7 @@ export default {
   }
 }
 
+// sezione popular features
 .popular-features{
   .container {
     height: 100%;

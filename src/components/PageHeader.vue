@@ -75,7 +75,7 @@ export default {
 
 header {
     height: 80px;
-    border: black 1px solid;
+    // border: black 1px solid;
     
 
     .container{
@@ -114,14 +114,6 @@ header {
 
             
 
-        }
-
-        button {
-            background-color: #377dff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            padding: 10px 20px;
         }
     }
     }

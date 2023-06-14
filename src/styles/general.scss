@@ -12,3 +12,16 @@ a {
 ul {
     list-style: none;
 }
+
+button{
+    // non mi fa mettere la variabile $primary qua
+    background-color: #377dff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+
+    &:hover{
+        background-color:black;
+    }
+  }
