@@ -108,8 +108,9 @@ export default {
 <style scoped lang="scss">
 footer {
     height: 200px;
-    border: red 1px solid;
+    border: #eff1ef 1px solid;
     color: #8e989f;
+    margin-top: 50px;
 
     .container {
         height: 100%;

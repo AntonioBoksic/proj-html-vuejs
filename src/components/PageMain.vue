@@ -269,6 +269,60 @@ export default {
 
   </div>
 </section>
+
+<!-- sezione contact -->
+<section class="contact">
+
+  <div class="container">
+    <h2>Contact with our team</h2>
+    <p class="pcenter">If you are planning on developing a product landing.</p>
+
+    <div
+    class="container-flex">
+
+      <div class="map-img">
+        <img src="../../public/img/StaticMapService.GetMapIma.png" alt="">
+
+        <div class="address">
+          
+          <div>
+            <div> <strong>Storey Ave</strong></div>
+            <div class="city">San Francisco, California 94129</div>
+            <div class="visualizza-mappa">visualizza mappa più grande</div>
+
+          </div>
+          
+          
+          <div class="indicazioni">
+            <!-- <div>qui ci va immagine</div> -->
+            
+            <div>indicazi...</div>
+          </div>
+        
+        </div>
+
+        <div class="zoom-map">
+          <div class="zoom-in">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <div class="zoom-out">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="form">
+        form
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
   
 </template>
 
@@ -282,6 +336,7 @@ export default {
 h2 {
   font-size: 33px;
   line-height: 44px;
+  
 }
 
 p{
@@ -496,6 +551,83 @@ p{
       }
     }
   }
+}
+
+// sezione contact 
+.contact{
+  padding-top:$paddingtop-sections ;
+
+  .container {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+
+    h2{
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    .container-flex{
+      padding-top: 30px;
+      display: flex;
+
+      .map-img {
+        position: relative;
+
+        .address{
+          padding: 10px;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          background-color: white;
+          display: flex;
+          .city{
+          color: grey;
+          font-size: 14px;
+        }
+
+        .visualizza-mappa {
+          padding-top: 20px;
+          color: $primary;
+        }
+
+        .indicazioni {
+          color: $primary;
+          padding-left: 30px;
+          
+        }
+
+        }
+
+        .zoom-map{
+          position: absolute;
+          bottom: 10px;
+          right: 5px;
+          background-color: white;
+          padding: 5px;
+          font-size: 30px;
+          color: grey;
+
+          .zoom-in {
+
+            border-bottom: solid 1px #eff1ef;
+
+          }
+
+          .zoom-out{
+            position: relative;
+            top: 3px;
+          }
+        }
+        
+      }
+    }
+
+  }
+
 }
 
 </style>
