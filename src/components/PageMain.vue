@@ -156,6 +156,45 @@ export default {
 
 </section>
 
+<!-- sezione our testimonials -->
+<section class="our-testimonials">
+
+  <div class="wave-img">
+    <img src="../../public/img/15.png" alt="">
+  </div>
+
+  <div class="container">
+    <h2>Our Testimonials</h2>
+    <p class="pcenter">If you are planning on developing a product landing app or website, take a look at this beautiful crafted</p>
+
+    <div class="cards-container">
+
+      <div class="card">
+
+        <div class="card-img">
+          <img src="../../public/img/26.jpeg" alt="">
+        </div>
+
+        <div class="title">
+          Julia Aann <span> - COO Sofbox</span>
+        </div>
+
+        <p>
+          At vero eos et accusuamus et iusto odio dignissimos ducimus qui blanditiis presentium vero eos et consectetur accus adip adip.
+        </p>
+
+      </div>
+
+      <div class="card">
+        card
+      </div>
+
+    </div>
+  </div>
+  
+
+</section>
+
 <!-- sezione latest posts -->
 <section class="latest-posts">
   <div class="container">
@@ -178,7 +217,7 @@ export default {
         </div>
       </div>
 
-      <!-- card 1 -->
+      <!-- card 2 -->
       <div class="card">
 
         <div class="card-img">
@@ -214,17 +253,13 @@ export default {
   </div>
 </section>
   
-  
-
 </template>
 
 <!-- STILE -->
-
 <style scoped lang="scss">
 
 @use '../styles/partials/variables.scss' as *;
 @use '../styles/general.scss' as *;
-
 
 
 h2 {
@@ -293,10 +328,94 @@ p{
   
 }
 
+// sezione our testimonials
+.our-testimonials{
+  padding-top: $paddingtop-sections;
+  position: relative;
+
+  .container{
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    
+    h2 {
+    text-align: center;
+    }
+
+  .pcenter {
+    text-align: center;
+    padding-bottom: 50px;
+    width: 46%;
+    margin: 0 auto;
+    }
+
+    .cards-container{
+      
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .card {
+        width: calc(50% - 40px);
+        height: 300px;
+        border: black 1px solid;
+        padding: 30px;
+
+        .title{
+          font-size:$cardtitlefontsize ;
+          text-align: center;
+          padding: 30px 0px;
+
+          span{
+            color: #8e989f;
+            font-size: 18px;
+          }
+        }
+
+        .card-img {
+          
+          border: black 2px solid;
+          width: 75px;
+          height: 75px;
+          margin: 0 auto;
+          border-radius: 40px;
+
+          img{
+            width: 100%;
+            border-radius: 40px;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .wave-img{
+
+    img{ 
+      // position: absolute;
+      // transform: translate(-50%,0);
+      // top:0px;
+      // width: 350px;
+      color: black;
+      background-color: green;
+
+
+    }
+
+  }
+
+}
+
 // sezione latest posts
 .latest-posts {
   padding-top: $paddingtop-sections;
   .container{
+
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
     
     h2 {
     text-align: center;
@@ -308,9 +427,7 @@ p{
     }
 
     .cards-container{
-      height: 100%;
-      width: 75%;
-      margin: 0 auto;
+      
       display: flex;
       align-items: center;
       justify-content: space-between;
