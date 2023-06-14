@@ -168,7 +168,7 @@ export default {
     <p class="pcenter">If you are planning on developing a product landing app or website, take a look at this beautiful crafted</p>
 
     <div class="cards-container">
-
+      <!-- card1 -->
       <div class="card">
 
         <div class="card-img">
@@ -183,11 +183,28 @@ export default {
           At vero eos et accusuamus et iusto odio dignissimos ducimus qui blanditiis presentium vero eos et consectetur accus adip adip.
         </p>
 
+        
+
       </div>
 
+      <!-- card2 -->
       <div class="card">
-        card
+
+        <div class="card-img">
+          <img src="../../public/img/27.jpeg" alt="">
+        </div>
+
+        <div class="title">
+          Mac Znder <span> - Manager Sofbox</span>
+        </div>
+
+        <p>
+          At vero eos et accusuamus et iusto odio dignissimos ducimus qui blanditiis presentium vero eos et consectetur accus adip adip.
+        </p>
+
       </div>
+
+      
 
     </div>
   </div>
