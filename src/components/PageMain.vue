@@ -279,7 +279,7 @@ export default {
 
     <div
     class="container-flex">
-
+      <!-- mappa -->
       <div class="map-img">
         <img src="../../public/img/StaticMapService.GetMapIma.png" alt="">
 
@@ -313,8 +313,65 @@ export default {
         </div>
 
       </div>
+      <!-- form -->
       <div class="form">
-        form
+
+        <!-- logo -->
+        <div class="logo">
+          <img src="../../public/img/35.png" alt="">
+        </div>
+        <!-- indirizzo -->
+        <div>
+        <strong>9840 Shore St. Fond Du Lac, WI 54935</strong>
+        </div>
+
+        <div class="contatti">
+          <p>0 1223 456 789</p>
+        <p>mail@sofbox.com</p>
+
+        </div>
+        
+
+        <!-- icone -->
+        <div class="icone">
+          <div class="icona">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="icona">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="icona">
+            <i class="fa-brands fa-reddit"></i>
+          </div>
+          <div class="icona">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+
+        </div>
+
+        <!-- get in touch -->
+        <div class="getintouch">Get in Touch</div>
+
+        <!-- sezione inpiut -->
+        <section class="input-section">
+
+          <div class="nomeMail">
+            <input classe="nome_input" type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+          </div>
+
+          <div>
+            <input type="text" placeholder="Your Subject">
+          </div>
+
+          <div>
+            <input class="yourMessage" type="text" placeholder="Your Message">
+          </div>
+
+        </section>
+        
+        <!-- bottone finale -->
+        <button>Send Message</button>
 
       </div>
 
@@ -577,6 +634,8 @@ p{
       .map-img {
         position: relative;
 
+        
+
         .address{
           padding: 10px;
           position: absolute;
@@ -604,12 +663,21 @@ p{
 
         .zoom-map{
           position: absolute;
-          bottom: 10px;
+          top: 360px;
           right: 5px;
           background-color: white;
           padding: 5px;
           font-size: 30px;
           color: grey;
+
+          i{
+            &:hover {
+              cursor: pointer;
+              background-color: black;
+            
+
+            }
+          }
 
           .zoom-in {
 
@@ -623,6 +691,107 @@ p{
           }
         }
         
+      }
+
+      .form {
+        padding-left: 20px;
+
+        
+        
+
+        .logo{
+          padding-bottom: 20px;
+        }
+
+        .contatti{
+          padding: 10px 0px;
+
+          p{
+          text-align: start;
+          
+        }
+        }
+
+        .icone{
+          display: flex;
+          color: $primary;
+          margin: 20px 0px;
+
+          .icona{
+            
+            
+            border: 1px solid #eff1ef;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            line-height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+
+            
+
+            // margin: 0px 5px;
+            // padding: 2px;
+            
+          }
+        }
+
+        .getintouch {
+          font-size: $cardtitlefontsize;
+          padding: 30px 0px;
+        }
+
+        .input-section{
+
+          input {
+            margin: 20px 0px;
+            width: 100%;
+            height: 40px;
+            border:1px solid #eff1ef;
+            padding-left: 20px;
+            padding-top: none;
+
+          }
+
+          .nomeMail{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            
+
+            input{
+              width: calc(50% - 10px);
+              
+              
+            }
+
+          }
+
+          .yourMessage{
+            height: 150px;
+            text-align: start;
+            line-height: 150px;
+            vertical-align: top;
+            text-align:start
+            
+            
+            
+            
+
+          }
+
+          
+        
+
+          
+        }
+
+        
+
+        .button{
+          margin-top: 20px;
+        }
       }
     }
 

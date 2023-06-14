@@ -34,7 +34,9 @@ export default {
                 <img src="../../public/img/logo-2.png" alt="">
             </div>
 
-            <ul>
+            <nav>
+
+                <ul>
                 <!-- popolo lista dinamicamente con dati nell array menù passato con props links -->
                 <li v-for="(link,index) in links" :key="index" >
                     <a :href="link.url" :class="link.current ? 'active' : ''">
@@ -47,12 +49,15 @@ export default {
                     <div>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
+                </li>
                     
+                <li>
                     <div>
                         <i class="fa-solid fa-cart-shopping"></i>
                     
                     </div>
                 </li>
+                
 
                 <li>
                     
@@ -62,6 +67,10 @@ export default {
                 </li>
 
             </ul>
+
+            </nav>
+
+            
 
         </div>
 
