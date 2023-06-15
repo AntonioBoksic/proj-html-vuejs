@@ -45,17 +45,13 @@ export default {
                 </li>
 
                 <!-- da qui popolo lista staticamente -->
-                <li class="list-item-icone">
-                    <div>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </li>
                     
                 <li>
-                    <div>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    
-                    </div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="notifica-cart">1</div>
                 </li>
                 
 
@@ -112,14 +108,29 @@ header {
         
         li {
             padding: 0px 10px;
+            position: relative;
 
-            .list-item-icone {
-                display: flex;
+            
+                
+                .notifica-cart{
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 30px;
+                    color: white;
+                    background-color: #377dff;
+                    position: absolute;
+                    top: -10px;
+                    right: 10px;
+                    z-index: -50;
+                    text-align: center;
+                    font-size: 12px;
+
+                }
 
                 i {
                     padding: 0px 10px;
                 }
-            }
+            
 
             
 

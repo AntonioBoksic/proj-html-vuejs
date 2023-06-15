@@ -417,9 +417,20 @@ p{
 
     .card-features {
       width: calc(25% - 40px);
-      border:black 1px solid;
+      // border:black 1px solid;
       margin: 20px 0px;
       padding: 10px;
+      box-shadow: 
+      5px 5px 15px 2px #00000026;
+
+      &:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 
+        15px 15px 20px 20px #0000004a;
+        cursor: pointer;
+
+      }
 
 
       .title {
@@ -493,6 +504,10 @@ p{
         // border: black 1px solid;
         padding: 30px;
         box-shadow: 5px 5px 15px 2px #00000026;
+        // background-image: url(../../public/img/virgolette.png);
+        // background-repeat: no-repeat;
+        
+        ;
 
         .title{
           font-size:$cardtitlefontsize ;
@@ -513,6 +528,7 @@ p{
           height: 75px;
           margin: 0 auto;
           border-radius: 40px;
+          box-shadow: 0px 0px 70px 5px #8e989f;
 
           img{
             width: 100%;
